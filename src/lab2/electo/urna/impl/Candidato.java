@@ -6,7 +6,7 @@ public class Candidato {
     private int id;
     private String nombre;
     private String partido;
-    private Queue votosRecibidos;
+    private final Queue votosRecibidos;
 
     public Candidato(int id, String nombre, String partido) {
         this.id = id;

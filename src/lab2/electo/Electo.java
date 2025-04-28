@@ -6,6 +6,21 @@ import lab2.electo.urna.impl.Votante;
 
 import java.util.Map;
 
+/*
+* Estructura de Datos y Algoritmos
+* Laboratorio 2: Votación
+*
+* Autores:
+*   Alexander Bravo
+*   Eduardo Vergara
+*
+* Profesora:
+*   Valentina Aravena
+*
+* Repositorio:
+*   https://github.com/Aleesk/LAB-EDA-2
+*/
+
 public class Electo {
     public static void main(String[] args) {
         UrnaElectoral urna = new UrnaElectoral();

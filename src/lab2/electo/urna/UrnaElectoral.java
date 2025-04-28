@@ -11,7 +11,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;;
+import java.util.Map;
 
 public class UrnaElectoral {
     private final LinkedList listaCandidatos;
@@ -74,12 +74,12 @@ public class UrnaElectoral {
     public Map<Integer, Integer> obtenerResultados() {
         Map<Integer, Integer> resultados = new HashMap<>();
 
-        LinkedList.Node current = listaCandidatos.getHead();
-        while (current != null) {
-            int candidatoID = current.getData().getId();
-            int votos = current.getData().getVotosRecibidos().getItems() + 1;
+        LinkedList.Node temp = listaCandidatos.getHead();
+        while (temp != null) {
+            int candidatoID = temp.getData().getId();
+            int votos = temp.getData().getVotosRecibidos().getItems() + 1;
             resultados.put(candidatoID, votos);
-            current = current.getNext();
+            temp = temp.getNext();
         }
 
         return resultados;
